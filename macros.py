@@ -1,5 +1,4 @@
 def main():
-
   
   optionMenu = 0
   
@@ -20,51 +19,15 @@ def calculateMacros(w,act):
   
   activity_type = {
         1:{ # sedentary
-    "requirements": {
-        "proteins": 1.2,
-        "carbos": 3.0,
-        "fat": {
-            "man": 0.7,
-            "woman": 0.8
-        }
-    }
-    },
+    "requirements": {"proteins": 1.2,"carbos": 3.0,"fat": {"man": 0.7,"woman": 0.8}}},
         2:{ # light
-    "requirements": {
-        "proteins": 1.6,
-        "carbos": 3.5,
-        "fat": {
-            "man": 0.7,
-            "woman": 0.8
-        }
-    }},
+    "requirements": {"proteins": 1.6,"carbos": 3.5,"fat": {"man": 0.7,"woman": 0.8}}},
         3:{# moderate
-    "requirements": { 
-        "proteins": 2.0,
-        "carbos": 3.9,
-        "fat": {
-            "man": 0.8,
-            "woman": 1.0
-        }
-    }},
+    "requirements": {"proteins": 2.0,"carbos": 3.9,"fat": {"man": 0.8,"woman": 1.0}}},
         4:{ # strong
-    "requirements": {
-        "proteins": 2.2,
-        "carbos": 4.2,
-        "fat": {
-            "man": 0.8,
-            "woman": 1.0
-        }
-    }},
-        5:{
-    "requirements": { # very strong
-        "proteins": 2.5,
-        "carbos": 4.5,
-        "fat": {
-            "man": 1.0,
-            "woman": 1.2
-        }
-    }}
+    "requirements": {"proteins": 2.2,"carbos": 4.2,"fat": {"man": 0.8,"woman": 1.0}}},
+        5:{ # very strong
+    "requirements": {"proteins": 2.5,"carbos": 4.5,"fat": {"man": 1.0,"woman": 1.2}}}
 }
 
   activity = activity_type.get(act)
@@ -78,7 +41,6 @@ def calculateMacros(w,act):
   else:
     print("Invalid activity")
   return
-  
 
 if __name__ == "__main__":
   main()
